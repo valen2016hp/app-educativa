@@ -1,0 +1,19 @@
+import { Question } from '../../types';
+
+export const questions: Question[] = [
+  { id: 'h1', type: 'multiple-choice', prompt: "**Cell membrane** controls what enters the **cell**.", options: ["Nucleus", "Membrane", "Cytoplasm"], correctAnswer: "Membrane", feedback: "¡Correcto! La **cell membrane** es la 'piel' que protege la célula." },
+  { id: 'h2', type: 'multiple-choice', prompt: "The **pancreas** produces juices for **digestion**.", options: ["Heart", "Lungs", "Pancreas"], correctAnswer: "Pancreas", feedback: "¡Bien! El **pancreas** ayuda a descomponer los alimentos." },
+  { id: 'h3', type: 'multiple-choice', prompt: "**Alveoli** are small sacs in the **lungs**.", options: ["Bronchi", "Alveoli", "Trachea"], correctAnswer: "Alveoli", feedback: "¡Exacto! En los **alveoli** (alvéolos) ocurre el intercambio de gases." },
+  { id: 'h4', type: 'multiple-choice', prompt: "**Pulmonary circulation** moves blood to the **lungs**.", options: ["Lungs", "Brain", "Legs"], correctAnswer: "Lungs", feedback: "¡Bien hecho! La **pulmonary circulation** lleva la sangre a oxigenarse." },
+  { id: 'h5', type: 'multiple-choice', prompt: "**Sweat glands** help remove **waste** through skin.", options: ["Kidneys", "Sweat glands", "Lungs"], correctAnswer: "Sweat glands", feedback: "¡Correcto! Las **sweat glands** (glándulas sudoríparas) eliminan toxinas." },
+  { id: 'h6', type: 'multiple-choice', prompt: "The **ureters** connect kidneys to the **bladder**.", options: ["Urethra", "Ureters", "Veins"], correctAnswer: "Ureters", feedback: "¡Bien! Los **ureters** (uréteres) son los tubos que bajan la orina." },
+  { id: 'h7', type: 'multiple-choice', prompt: "**Plasma** is the liquid part of the **blood**.", options: ["Plasma", "Cells", "Water"], correctAnswer: "Plasma", feedback: "¡Exacto! El **plasma** es el líquido amarillento donde flotan las células." },
+  { id: 'h8', type: 'multiple-choice', prompt: "**Gametes** are cells used for **reproduction**.", options: ["Tissues", "Gametes", "Organs"], correctAnswer: "Gametes", feedback: "¡Correcto! Los **gametes** (gametos) son las células reproductoras." },
+  { id: 'h9', type: 'multiple-choice', prompt: "**White blood cells** protect the body from **germs**.", options: ["Red cells", "White cells", "Platelets"], correctAnswer: "White cells", feedback: "¡Bien! Los **white blood cells** son nuestros soldados contra enfermedades." },
+  { id: 'h10', type: 'multiple-choice', prompt: "**Platelets** help the **blood** to stop bleeding.", options: ["Plasma", "Platelets", "Oxygen"], correctAnswer: "Platelets", feedback: "¡Genial! Las **platelets** (plaquetas) cierran las heridas." },
+  { id: 'h11', type: 'multiple-choice', prompt: "**Gas exchange** happens inside the **alveoli**.", options: ["Trachea", "Bronchi", "Alveoli"], correctAnswer: "Alveoli", feedback: "¡Perfecto! El **gas exchange** es cambiar CO2 por oxígeno." },
+  { id: 'h12', type: 'multiple-choice', prompt: "**Systemic circulation** carries blood to the **body**.", options: ["Lungs", "Heart", "Body"], correctAnswer: "Body", feedback: "¡Correcto! La **systemic circulation** reparte sangre por todo el cuerpo." },
+  { id: 'h13', type: 'multiple-choice', prompt: "**Cytoplasm** is the jelly inside a **cell**.", options: ["Nucleus", "Membrane", "Cytoplasm"], correctAnswer: "Cytoplasm", feedback: "¡Bien! El **cytoplasm** (citoplasma) sostiene los orgánulos." },
+  { id: 'h14', type: 'multiple-choice', prompt: "The **nervous system** controls all body **actions**.", options: ["Digestive", "Nervous", "Excretory"], correctAnswer: "Nervous", feedback: "¡Exacto! El **nervous system** envía órdenes a todo el cuerpo." },
+  { id: 'h15', type: 'multiple-choice', prompt: "**Photosynthesis** does not happen in human **cells**.", options: ["Plants", "Humans", "Animals"], correctAnswer: "Humans", feedback: "¡Correcto! Las células humanas no hacen fotosíntesis, solo las de las plantas." }
+];

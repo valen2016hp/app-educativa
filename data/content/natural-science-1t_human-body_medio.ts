@@ -1,0 +1,19 @@
+import { Question } from '../../types';
+
+export const questions: Question[] = [
+  { id: 'm1', type: 'multiple-choice', prompt: "**Organs** work together to form a **system**.", options: ["Cells", "Tissues", "Systems"], correctAnswer: "Systems", feedback: "¡Correcto! Varios **organs** trabajando juntos forman un **system** (sistema)." },
+  { id: 'm2', type: 'multiple-choice', prompt: "The **circulatory system** moves **oxygen** around.", options: ["Oxygen", "Food", "Waste"], correctAnswer: "Oxygen", feedback: "¡Bien! El sistema circulatorio reparte **oxygen** y nutrientes." },
+  { id: 'm3', type: 'multiple-choice', prompt: "**Inhaling** brings **air** into the **lungs**.", options: ["Inhaling", "Exhaling", "Eating"], correctAnswer: "Inhaling", feedback: "¡Eso es! **Inhaling** (inspirar) es meter aire en los pulmones." },
+  { id: 'm4', type: 'multiple-choice', prompt: "The **urethra** is part of the **excretory system**.", options: ["Digestive", "Excretory", "Reproductive"], correctAnswer: "Excretory", feedback: "¡Exacto! La **urethra** (uretra) expulsa la orina al exterior." },
+  { id: 'm5', type: 'multiple-choice', prompt: "**Digestion** starts in the **mouth** with saliva.", options: ["Stomach", "Mouth", "Intestine"], correctAnswer: "Mouth", feedback: "¡Bien! La **digestion** empieza al masticar en la **mouth** (boca)." },
+  { id: 'm6', type: 'multiple-choice', prompt: "The **testicles** are part of the male **system**.", options: ["Male", "Female", "Circulatory"], correctAnswer: "Male", feedback: "¡Correcto! Los **testicles** (testículos) son del sistema reproductor masculino." },
+  { id: 'm7', type: 'multiple-choice', prompt: "**Exhalation** removes **carbon dioxide** from the body.", options: ["Oxygen", "Carbon dioxide", "Nitrogen"], correctAnswer: "Carbon dioxide", feedback: "¡Muy bien! Al **exhale** (expirar) soltamos el **carbon dioxide**." },
+  { id: 'm8', type: 'multiple-choice', prompt: "**Blood** travels through **veins** and **arteries**.", options: ["Tubes", "Veins", "Bones"], correctAnswer: "Veins", feedback: "¡Correcto! Las **veins** (venas) llevan la sangre de vuelta al corazón." },
+  { id: 'm9', type: 'multiple-choice', prompt: "The **bladder** stores **urine** before it leaves.", options: ["Kidneys", "Bladder", "Urethra"], correctAnswer: "Bladder", feedback: "¡Bien hecho! La **bladder** (vejiga) es como una bolsa que guarda la orina." },
+  { id: 'm10', type: 'multiple-choice', prompt: "**Tissue** is a group of similar **cells**.", options: ["Organ", "System", "Tissue"], correctAnswer: "Tissue", feedback: "¡Exacto! Un **tissue** (tejido) está formado por células que hacen lo mismo." },
+  { id: 'm11', type: 'multiple-choice', prompt: "The **esophagus** connects the mouth to the **stomach**.", options: ["Trachea", "Esophagus", "Intestine"], correctAnswer: "Esophagus", feedback: "¡Bien! La comida baja por el **esophagus** (esófago) hasta el estómago." },
+  { id: 'm12', type: 'multiple-choice', prompt: "**Capillaries** are very small **blood vessels**.", options: ["Arteries", "Veins", "Capillaries"], correctAnswer: "Capillaries", feedback: "¡Correcto! Los **capillaries** (capilares) son vasos sanguíneos finísimos." },
+  { id: 'm13', type: 'multiple-choice', prompt: "**Fertilization** happens when two cells **join**.", options: ["Join", "Separate", "Die"], correctAnswer: "Join", feedback: "¡Genial! La **fertilization** es la unión del óvulo y el espermatozoide." },
+  { id: 'm14', type: 'multiple-choice', prompt: "The **large intestine** absorbs **water** from waste.", options: ["Nutrients", "Water", "Oxygen"], correctAnswer: "Water", feedback: "¡Eso es! El **large intestine** (intestino grueso) recupera el **water**." },
+  { id: 'm15', type: 'multiple-choice', prompt: "**Organs** like the heart are made of **tissues**.", options: ["Systems", "Cells", "Tissues"], correctAnswer: "Tissues", feedback: "¡Perfecto! Los **tissues** se agrupan para formar un **organ** (órgano)." }
+];
