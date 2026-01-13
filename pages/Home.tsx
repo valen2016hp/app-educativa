@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calculator, BookOpen, Globe, Search, Turtle, BookMarked } from 'lucide-react';
+import { Calculator, BookOpen, Globe, Search, Turtle, BookMarked, Earth } from 'lucide-react';
 import SubjectCard from '../components/SubjectCard';
 import { useUser } from '../context/UserContext';
 
@@ -19,10 +19,17 @@ const SUBJECTS = [
     colorClass: 'bg-blue-500',
   },
   {
-    id: 'coneixement-medi-1t',
-    name: 'Coneixement del medi 1T',
+    id: 'conteixement-medi-1t',
+    name: 'Conteixement del medi 1T',
     icon: BookMarked,
-    description: 'Descobrim la Terra, història, cultures.',
+    description: 'Descobrim la història, cultures.',
+    colorClass: 'bg-yellow-500',
+  },
+  {
+    id: 'conteixement-medi-2t',
+    name: 'Conteixement del medi 2T',
+    icon: Earth,
+    description: 'La Terra i els seus elements',
     colorClass: 'bg-yellow-500',
   },
   {

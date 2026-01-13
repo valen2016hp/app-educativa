@@ -16,6 +16,8 @@ import {
   BookMarked,
   House,
   Store,
+  CloudSun,
+  Earth,
 } from 'lucide-react';
 
 export const COURSES_DATA = [
@@ -43,13 +45,23 @@ export const COURSES_DATA = [
     ]
   },
   {
-    id: 'coneixement-medi-1t',
-    name: 'Coneixement del medi 1T',
+    id: 'conteixement-medi-1t',
+    name: 'Conteixement del medi 1T',
     icon: BookMarked,
-    description: 'Descobrim la Terra, història, cultures.',
+    description: 'Descobrim la història, cultures.',
     colorClass: 'bg-yellow-500',
     topics: [
       { id: 'civilitzaciones', name: 'Les civilitzaciones clàssiques', icon: Store  , description: 'Antigues cultures, grans civilitzacions i llegats.' },
+    ]
+  },
+  {
+    id: 'conteixement-medi-2t',
+    name: 'Conteixement del medi 2T',
+    icon: Earth,
+    description: 'La Terra i els seus elements',
+    colorClass: 'bg-yellow-500',
+    topics: [
+      { id: 'atmosfera', name: "L'atmosfera", icon: CloudSun  , description: 'Atmosfera i clima terrestre' },
     ]
   },
   {

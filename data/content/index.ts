@@ -31,10 +31,15 @@ import { questions as natsci_body_medio } from './natural-science-1t_human-body_
 import { questions as natsci_body_dificil } from './natural-science-1t_human-body_dificil';
 import { questions as natsci_body_evaluacion } from './natural-science-1t_human-body_evaluacion';
 
-import { questions as coneimedi_civi_facil } from './coneixement-medi-1t_civilitzaciones_facil';
-import { questions as coneimedi_civi_medio } from './coneixement-medi-1t_civilitzaciones_medio';
-import { questions as coneimedi_civi_dificil } from './coneixement-medi-1t_civilitzaciones_dificil';
-import { questions as coneimedi_civi_evaluacion } from './coneixement-medi-1t_civilitzaciones_evaluacion';
+import { questions as conteimedi_civi_facil } from './conteixement-medi-1t_civilitzaciones_facil';
+import { questions as conteimedi_civi_medio } from './conteixement-medi-1t_civilitzaciones_medio';
+import { questions as conteimedi_civi_dificil } from './conteixement-medi-1t_civilitzaciones_dificil';
+import { questions as conteimedi_civi_evaluacion } from './conteixement-medi-1t_civilitzaciones_evaluacion';
+
+import { questions as conteimedi_atmo_facil } from './conteixement-medi-2t_atmosfera_facil';
+import { questions as conteimedi_atmo_medio } from './conteixement-medi-2t_atmosfera_medio';
+import { questions as conteimedi_atmo_dificil } from './conteixement-medi-2t_atmosfera_dificil';
+import { questions as conteimedi_atmo_evaluacion } from './conteixement-medi-2t_atmosfera_evaluacion';
 
 // Type for our content dictionary
 type ContentMap = {
@@ -76,10 +81,15 @@ const contentRegistry: ContentMap = {
   'natural-science-1t_human-body_dificil': natsci_body_dificil,
   'natural-science-1t_human-body_evaluacion': natsci_body_evaluacion,
 
-  'coneixement-medi-1t_civilitzaciones_facil': coneimedi_civi_facil,
-  'coneixement-medi-1t_civilitzaciones_medio': coneimedi_civi_medio,
-  'coneixement-medi-1t_civilitzaciones_dificil': coneimedi_civi_dificil,
-  'coneixement-medi-1t_civilitzaciones_evaluacion': coneimedi_civi_evaluacion,
+  'conteixement-medi-1t_civilitzaciones_facil': conteimedi_civi_facil,
+  'conteixement-medi-1t_civilitzaciones_medio': conteimedi_civi_medio,
+  'conteixement-medi-1t_civilitzaciones_dificil': conteimedi_civi_dificil,
+  'conteixement-medi-1t_civilitzaciones_evaluacion': conteimedi_civi_evaluacion,
+
+  'conteixement-medi-2t_atmosfera_facil': conteimedi_atmo_facil,
+  'conteixement-medi-2t_atmosfera_medio': conteimedi_atmo_medio,
+  'conteixement-medi-2t_atmosfera_dificil': conteimedi_atmo_dificil,
+  'conteixement-medi-2t_atmosfera_evaluacion': conteimedi_atmo_evaluacion,
 };
 
 export const getContentForLevel = (
