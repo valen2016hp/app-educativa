@@ -41,6 +41,11 @@ import { questions as conteimedi_atmo_medio } from './conteixement-medi-2t_atmos
 import { questions as conteimedi_atmo_dificil } from './conteixement-medi-2t_atmosfera_dificil';
 import { questions as conteimedi_atmo_evaluacion } from './conteixement-medi-2t_atmosfera_evaluacion';
 
+import { questions as conteimedi_terra_facil } from './conteixement-medi-2t_terra_facil';
+import { questions as conteimedi_terra_medio } from './conteixement-medi-2t_terra_medio';
+import { questions as conteimedi_terra_dificil } from './conteixement-medi-2t_terra_dificil';
+import { questions as conteimedi_terra_evaluacion } from './conteixement-medi-2t_terra_evaluacion';
+
 // Type for our content dictionary
 type ContentMap = {
   [key: string]: Question[];
@@ -49,6 +54,11 @@ type ContentMap = {
 // --- THE REGISTRY ---
 // Register new files here using the format: "subject_topic_level"
 const contentRegistry: ContentMap = {
+  'conteixement-medi-2t_terra_facil': conteimedi_terra_facil,
+  'conteixement-medi-2t_terra_medio': conteimedi_terra_medio,
+  'conteixement-medi-2t_terra_dificil': conteimedi_terra_dificil,
+  'conteixement-medi-2t_terra_evaluacion': conteimedi_terra_evaluacion,
+
   'matematicas1t_fracciones_facil': mat1t_frac_facil,
 
   'lengua_adjetivos_facil': len_adj_v_facil,

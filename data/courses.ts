@@ -18,6 +18,7 @@ import {
   Store,
   CloudSun,
   Earth,
+  EarthIcon,
 } from 'lucide-react';
 
 export const COURSES_DATA = [
@@ -61,6 +62,7 @@ export const COURSES_DATA = [
     description: 'La Terra i els seus elements',
     colorClass: 'bg-yellow-500',
     topics: [
+      { id: 'terra', name: "El nostre planeta: La Terra", icon: EarthIcon  , description: 'La Terra' },
       { id: 'atmosfera', name: "L'atmosfera", icon: CloudSun  , description: 'Atmosfera i clima terrestre' },
     ]
   },
