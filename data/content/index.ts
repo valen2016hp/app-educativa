@@ -44,7 +44,9 @@ import { questions as conteimedi_atmo_evaluacion } from './conteixement-medi-2t_
 import { questions as conteimedi_terra_facil } from './conteixement-medi-2t_terra_facil';
 import { questions as conteimedi_terra_medio } from './conteixement-medi-2t_terra_medio';
 import { questions as conteimedi_terra_dificil } from './conteixement-medi-2t_terra_dificil';
-import { questions as conteimedi_terra_evaluacion } from './conteixement-medi-2t_terra_evaluacion';
+import { questions as conteimedi_terra_evaluacionfacil } from './conteixement-medi-2t_terra_evaluacion-facil';
+import { questions as conteimedi_terra_evaluacionmedio } from './conteixement-medi-2t_terra_evaluacion-medio';
+import { questions as conteimedi_terra_evaluaciondificil } from './conteixement-medi-2t_terra_evaluacion-dificil';
 
 // Type for our content dictionary
 type ContentMap = {
@@ -57,7 +59,9 @@ const contentRegistry: ContentMap = {
   'conteixement-medi-2t_terra_facil': conteimedi_terra_facil,
   'conteixement-medi-2t_terra_medio': conteimedi_terra_medio,
   'conteixement-medi-2t_terra_dificil': conteimedi_terra_dificil,
-  'conteixement-medi-2t_terra_evaluacion': conteimedi_terra_evaluacion,
+  'conteixement-medi-2t_terra_evaluacion-facil': conteimedi_terra_evaluacionfacil,
+  'conteixement-medi-2t_terra_evaluacion-medio': conteimedi_terra_evaluacionmedio,
+  'conteixement-medi-2t_terra_evaluacion-dificil': conteimedi_terra_evaluaciondificil,
 
   'matematicas1t_fracciones_facil': mat1t_frac_facil,
 

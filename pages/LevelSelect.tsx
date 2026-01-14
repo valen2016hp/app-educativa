@@ -34,10 +34,26 @@ const LevelSelect: React.FC = () => {
       iconColor: 'text-red-600'
     },
     { 
-      id: 'evaluacion', 
-      name: 'Evaluación', 
+      id: 'evaluacion-facil', 
+      name: 'Evaluación fácil', 
       icon: ClipboardCheck, 
-      description: 'Ponte a prueba',
+      description: 'Nivel fácil',
+      colors: 'bg-violet-100 border-violet-300 text-violet-800 hover:bg-violet-200',
+      iconColor: 'text-violet-600'
+    },
+    { 
+      id: 'evaluacion-medio', 
+      name: 'Evaluación medio', 
+      icon: ClipboardCheck, 
+      description: 'Nivel medio',
+      colors: 'bg-violet-100 border-violet-300 text-violet-800 hover:bg-violet-200',
+      iconColor: 'text-violet-600'
+    },
+    { 
+      id: 'evaluacion-dificil', 
+      name: 'Evaluación difícil', 
+      icon: ClipboardCheck, 
+      description: 'Nivel difícil',
       colors: 'bg-violet-100 border-violet-300 text-violet-800 hover:bg-violet-200',
       iconColor: 'text-violet-600'
     },
@@ -55,13 +71,13 @@ const LevelSelect: React.FC = () => {
   return (
     <div className="space-y-8 animate-in zoom-in-95 duration-500">
       <div className="text-center pb-2">
-        <h2 className="text-3xl md:text-4xl font-bold text-dyslexia-blue mb-2">
+        {/* <h2 className="text-3xl md:text-4xl font-bold text-dyslexia-blue mb-2">
           Elige tu desafío
         </h2>
         <div className="inline-flex items-center gap-2 bg-white px-6 py-2 rounded-full border-2 border-dyslexia-blue/20 shadow-sm">
            <span className="text-xl text-gray-500">Tema:</span>
            <span className="text-xl font-bold text-dyslexia-accent">{topicData.name}</span>
-        </div>
+        </div> */}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
