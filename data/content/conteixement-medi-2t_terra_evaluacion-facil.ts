@@ -5,7 +5,7 @@ export const questions: Question[] = [
   {
     id: 'eval-1',
     type: 'multiple-choice',
-    prompt: "Com s'anomena la nostra **galàxia**?",
+    prompt: "Com s'anomena la nostra galàxia?",
     options: ["Via Làctia", "Andròmeda", "Sistema Solar"],
     correctAnswer: "Via Làctia",
     feedback: "Molt bon intent, continua així!"
@@ -13,7 +13,7 @@ export const questions: Question[] = [
   {
     id: 'eval-2',
     type: 'comparator',
-    prompt: "Quin d'aquests dos és un **planeta**?",
+    prompt: "Quin d'aquests dos és un planeta?",
     options: ["La Terra", "El Sol"],
     correctAnswer: "La Terra",
     feedback: "Bon esforç, segueix concentrada!"
@@ -21,7 +21,7 @@ export const questions: Question[] = [
   {
     id: 'eval-3',
     type: 'numeric',
-    prompt: "Quantes **hores** té un dia sencer?",
+    prompt: "Quantes hores té un dia sencer?",
     options: [],
     correctAnswer: "24",
     feedback: "Vas per molt bon camí!"
@@ -29,7 +29,7 @@ export const questions: Question[] = [
   {
     id: 'eval-4',
     type: 'multiple-choice',
-    prompt: "La capa de la Terra que està formada per **aigua** és la...",
+    prompt: "La capa de la Terra que està formada per aigua és la...",
     options: ["Atmosfera", "Geosfera", "Hidrosfera"],
     correctAnswer: "Hidrosfera",
     feedback: "Molt bé, no et rendeixis!"
@@ -37,7 +37,7 @@ export const questions: Question[] = [
   {
     id: 'eval-5',
     type: 'comparator',
-    prompt: "Quin d'aquests astres és el nostre **satèl·lit**?",
+    prompt: "Quin d'aquests astres és el nostre satèl·lit?",
     options: ["La Lluna", "El Sol"],
     correctAnswer: "La Lluna",
     feedback: "Gairebé ho tens, continua!"
@@ -45,7 +45,7 @@ export const questions: Question[] = [
   {
     id: 'eval-6',
     type: 'multiple-choice',
-    prompt: "Quin moviment de la Terra provoca el **dia i la nit**?",
+    prompt: "Quin moviment de la Terra provoca el dia i la nit?",
     options: ["Rotació", "Translació", "Salt"],
     correctAnswer: "Rotació",
     feedback: "Bon treball, segueix així!"
@@ -53,7 +53,7 @@ export const questions: Question[] = [
   {
     id: 'eval-7',
     type: 'numeric',
-    prompt: "Quants **dies** té un any normal?",
+    prompt: "Quants dies té un any normal?",
     options: [],
     correctAnswer: "365",
     feedback: "Fantàstica concentració!"
@@ -61,7 +61,7 @@ export const questions: Question[] = [
   {
     id: 'eval-8',
     type: 'multiple-choice',
-    prompt: "Com s'anomena la capa d'**aire** que envolta la Terra?",
+    prompt: "Com s'anomena la capa d'aire que envolta la Terra?",
     options: ["Hidrosfera", "Atmosfera", "Biosfera"],
     correctAnswer: "Atmosfera",
     feedback: "Molt bé, tu pots!"
@@ -69,7 +69,7 @@ export const questions: Question[] = [
   {
     id: 'eval-9',
     type: 'comparator',
-    prompt: "On trobem les **roques** i els continents?",
+    prompt: "On trobem les roques i els continents?",
     options: ["A la Geosfera", "A l'Atmosfera"],
     correctAnswer: "A la Geosfera",
     feedback: "Continua amb aquest esforç!"
@@ -77,7 +77,7 @@ export const questions: Question[] = [
   {
     id: 'eval-10',
     type: 'numeric',
-    prompt: "Quantes **estacions** té l'any (primavera, estiu...)?",
+    prompt: "Quantes estacions té l'any (primavera, estiu...)?",
     options: [],
     correctAnswer: "4",
     feedback: "Ho estàs fent genial!"
@@ -85,7 +85,7 @@ export const questions: Question[] = [
   {
     id: 'eval-11',
     type: 'multiple-choice',
-    prompt: "Quan la Lluna es veu tota **il·luminada** i rodona, és...",
+    prompt: "Quan la Lluna es veu tota il·luminada i rodona, és...",
     options: ["Lluna plena", "Lluna nova", "Quart creixent"],
     correctAnswer: "Lluna plena",
     feedback: "Molt bon intent!"
@@ -93,7 +93,7 @@ export const questions: Question[] = [
   {
     id: 'eval-12',
     type: 'comparator',
-    prompt: "Quin és l'**estel** que ens dóna llum i calor?",
+    prompt: "Quin és l'estel que ens dóna llum i calor?",
     options: ["El Sol", "La Lluna"],
     correctAnswer: "El Sol",
     feedback: "Bon camí, segueix endavant!"
@@ -101,7 +101,7 @@ export const questions: Question[] = [
   {
     id: 'eval-13',
     type: 'numeric',
-    prompt: "Quants **dies** triga aproximadament la Lluna a fer una volta a la Terra?",
+    prompt: "Quants dies triga aproximadament la Lluna a fer una volta a la Terra?",
     options: [],
     correctAnswer: "28",
     feedback: "Estàs molt a prop!"
@@ -109,7 +109,7 @@ export const questions: Question[] = [
   {
     id: 'eval-14',
     type: 'multiple-choice',
-    prompt: "Si la Lluna té forma de lletra **D**, està en fase...",
+    prompt: "Si la Lluna té forma de lletra D, està en fase...",
     options: ["Creixent", "Minvant", "Nova"],
     correctAnswer: "Creixent",
     feedback: "Molt bé, continua!"
@@ -117,7 +117,7 @@ export const questions: Question[] = [
   {
     id: 'eval-15',
     type: 'comparator',
-    prompt: "Quin moviment triga **un any** a completar-se?",
+    prompt: "Quin moviment triga un any a completar-se?",
     options: ["Translació", "Rotació"],
     correctAnswer: "Translació",
     feedback: "Bon esforç, Valentina!"
@@ -125,7 +125,7 @@ export const questions: Question[] = [
   {
     id: 'eval-16',
     type: 'numeric',
-    prompt: "Quants **planetes** hi ha al nostre Sistema Solar?",
+    prompt: "Quants planetes hi ha al nostre Sistema Solar?",
     options: [],
     correctAnswer: "8",
     feedback: "No et rendeixis, ho fas bé!"
@@ -133,7 +133,7 @@ export const questions: Question[] = [
   {
     id: 'eval-17',
     type: 'multiple-choice',
-    prompt: "En quina fase **no veiem** la Lluna al cel?",
+    prompt: "En quina fase no veiem la Lluna al cel?",
     options: ["Lluna plena", "Lluna nova", "Quart minvant"],
     correctAnswer: "Lluna nova",
     feedback: "Ànims, ja quasi està!"
@@ -141,7 +141,7 @@ export const questions: Question[] = [
   {
     id: 'eval-18',
     type: 'comparator',
-    prompt: "Quina capa és **sòlida** i de roca?",
+    prompt: "Quina capa és sòlida i de roca?",
     options: ["Geosfera", "Hidrosfera"],
     correctAnswer: "Geosfera",
     feedback: "Molt bona feina!"
@@ -149,7 +149,7 @@ export const questions: Question[] = [
   {
     id: 'eval-19',
     type: 'numeric',
-    prompt: "Quants **hemisferis** (meitats) té la Terra si la tallem per l'Equador?",
+    prompt: "Quants hemisferis (meitats) té la Terra si la tallem per l'Equador?",
     options: [],
     correctAnswer: "2",
     feedback: "Ets molt valenta, segueix!"
@@ -157,7 +157,7 @@ export const questions: Question[] = [
   {
     id: 'eval-20',
     type: 'multiple-choice',
-    prompt: "Si la Lluna té forma de lletra **C**, està en fase...",
+    prompt: "Si la Lluna té forma de lletra C, està en fase...",
     options: ["Quart creixent", "Quart minvant", "Lluna plena"],
     correctAnswer: "Quart minvant",
     feedback: "Has acabat, molt bona feina!"

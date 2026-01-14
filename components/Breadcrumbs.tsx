@@ -1,3 +1,4 @@
+// components\Breadcrumbs.tsx
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronRight, Home } from 'lucide-react';
@@ -10,11 +11,11 @@ const Breadcrumbs: React.FC = () => {
   if (pathnames.length === 0) return null;
 
   return (
-    <nav aria-label="Breadcrumb" className="mb-6 animate-in fade-in slide-in-from-left-4 duration-500">
-      <ol className="flex flex-wrap items-center gap-2 text-lg md:text-xl font-bold text-gray-500">
+    <nav aria-label="Breadcrumb" className="mb-2 animate-in fade-in slide-in-from-left-4 duration-500">
+      <ol className="flex flex-wrap items-center gap-1 text-base md:text-lg font-bold text-gray-500">
         <li className="flex items-center hover:text-dyslexia-blue hover:scale-105 transition-transform">
-          <Link to="/" className="flex items-center gap-1 p-2 rounded-lg hover:bg-white/50">
-            <Home size={20} />
+          <Link to="/" className="flex items-center gap-1 p-1.5 rounded-lg hover:bg-white/50">
+            <Home size={18} />
             <span>Inicio</span>
           </Link>
         </li>
@@ -26,15 +27,15 @@ const Breadcrumbs: React.FC = () => {
 
           return (
             <li key={to} className="flex items-center">
-              <ChevronRight size={20} className="mx-1 text-gray-400" />
+              <ChevronRight size={18} className="mx-0.5 text-gray-400" />
               {isLast ? (
-                <span className="px-2 py-1 bg-dyslexia-blue text-white rounded-lg shadow-sm" aria-current="page">
+                <span className="px-2 py-0.5 bg-dyslexia-blue text-white rounded-md shadow-sm text-sm md:text-base" aria-current="page">
                   {formattedName}
                 </span>
               ) : (
                 <Link 
                   to={to} 
-                  className="px-2 py-1 rounded-lg hover:bg-white/50 hover:text-dyslexia-blue hover:scale-105 transition-all"
+                  className="px-2 py-0.5 rounded-lg hover:bg-white/50 hover:text-dyslexia-blue hover:scale-105 transition-all"
                 >
                   {formattedName}
                 </Link>

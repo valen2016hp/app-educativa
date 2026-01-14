@@ -20,34 +20,34 @@ const Layout: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-dyslexia-cream text-dyslexia-blue font-sans selection:bg-yellow-200">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b-4 border-dyslexia-blue shadow-md">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      {/* Header - Compact Version */}
+      <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b-4 border-dyslexia-blue shadow-sm h-16 flex items-center">
+        <div className="w-full max-w-6xl mx-auto px-4 flex items-center justify-between">
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             {!isHome && (
-              <Link to="/" className="p-2 bg-yellow-100 hover:bg-yellow-200 rounded-full transition-colors border-2 border-dyslexia-blue" aria-label="Volver al inicio">
-                <Home size={28} className="text-dyslexia-blue" />
+              <Link to="/" className="p-1.5 bg-yellow-100 hover:bg-yellow-200 rounded-full transition-colors border-2 border-dyslexia-blue" aria-label="Volver al inicio">
+                <Home size={20} className="text-dyslexia-blue" />
               </Link>
             )}
-            <h1 className="text-2xl md:text-3xl font-bold tracking-wider">
+            <h1 className="text-xl md:text-2xl font-bold tracking-wider truncate">
               Mente Brillante
             </h1>
           </div>
 
           <button 
             onClick={toggleStats}
-            className="flex items-center gap-2 bg-dyslexia-blue text-white px-4 py-2 rounded-xl hover:bg-dyslexia-accent transition-all shadow-lg focus:ring-4 focus:ring-blue-300 transform active:scale-95"
+            className="flex items-center gap-2 bg-dyslexia-blue text-white px-3 py-1.5 rounded-lg hover:bg-dyslexia-accent transition-all shadow-md focus:ring-4 focus:ring-blue-300 transform active:scale-95"
             aria-label="Ver progreso del usuario"
           >
-            <span className="hidden sm:inline font-bold text-lg">{userName}</span>
-            <User size={24} />
+            <span className="hidden sm:inline font-bold text-base">{userName}</span>
+            <User size={20} />
           </button>
         </div>
       </header>
 
-      {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-6">
+      {/* Main Content - Reduced Padding */}
+      <main className="max-w-6xl mx-auto px-4 py-2">
         <Breadcrumbs />
         <Outlet />
       </main>
@@ -55,7 +55,7 @@ const Layout: React.FC = () => {
       {/* User Stats Modal/Overlay */}
       {isStatsOpen && (
         <div className="fixed inset-0 z-50 flex items-start justify-end p-4 sm:p-6 pointer-events-none">
-          {/* Backdrop (invisible but handles clicks outside ideally, simplified here to just the box) */}
+          {/* Backdrop */}
           <div 
             className="absolute inset-0 bg-black/20 backdrop-blur-sm pointer-events-auto" 
             onClick={() => setIsStatsOpen(false)}

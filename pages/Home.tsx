@@ -1,3 +1,4 @@
+// pages\Home.tsx
 import React, { useState } from 'react';
 import { Calculator, BookOpen, Globe, Search, Turtle, BookMarked, Earth } from 'lucide-react';
 import SubjectCard from '../components/SubjectCard';
