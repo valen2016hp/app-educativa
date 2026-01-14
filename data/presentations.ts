@@ -11,7 +11,7 @@ export const PRESENTATIONS_REGISTRY: Record<string, string[]> = {
 
   // TOPIC: La Terra
   // Make sure to put your images in public/assets/presentaciones/sociales/2t/terra/
-  'conteixement-medi-2t_terra': [
+  'coneixement-medi-2t_terra': [
     '/assets/presentaciones/sociales/2t/terra/Diapositiva1.JPG',
     '/assets/presentaciones/sociales/2t/terra/Diapositiva2.JPG',
     '/assets/presentaciones/sociales/2t/terra/Diapositiva3.JPG',

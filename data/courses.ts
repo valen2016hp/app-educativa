@@ -47,8 +47,8 @@ export const COURSES_DATA = [
     ]
   },
   {
-    id: 'conteixement-medi-1t',
-    name: 'Conteixement del medi 1T',
+    id: 'coneixement-medi-1t',
+    name: 'coneixement del medi 1T',
     icon: BookMarked,
     description: 'Descobrim la història, cultures.',
     colorClass: 'bg-yellow-500',
@@ -57,8 +57,8 @@ export const COURSES_DATA = [
     ]
   },
   {
-    id: 'conteixement-medi-2t',
-    name: 'Conteixement del medi 2T',
+    id: 'coneixement-medi-2t',
+    name: 'coneixement del medi 2T',
     icon: Earth,
     description: 'La Terra i els seus elements',
     colorClass: 'bg-yellow-500',

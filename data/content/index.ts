@@ -32,22 +32,22 @@
 // import { questions as natsci_body_dificil } from './natural-science-1t_human-body_dificil';
 // import { questions as natsci_body_evaluacion } from './natural-science-1t_human-body_evaluacion';
 
-// import { questions as conteimedi_civi_facil } from './conteixement-medi-1t_civilitzaciones_facil';
-// import { questions as conteimedi_civi_medio } from './conteixement-medi-1t_civilitzaciones_medio';
-// import { questions as conteimedi_civi_dificil } from './conteixement-medi-1t_civilitzaciones_dificil';
-// import { questions as conteimedi_civi_evaluacion } from './conteixement-medi-1t_civilitzaciones_evaluacion';
+// import { questions as conteimedi_civi_facil } from './coneixement-medi-1t_civilitzaciones_facil';
+// import { questions as conteimedi_civi_medio } from './coneixement-medi-1t_civilitzaciones_medio';
+// import { questions as conteimedi_civi_dificil } from './coneixement-medi-1t_civilitzaciones_dificil';
+// import { questions as conteimedi_civi_evaluacion } from './coneixement-medi-1t_civilitzaciones_evaluacion';
 
-// import { questions as conteimedi_atmo_facil } from './conteixement-medi-2t_atmosfera_facil';
-// import { questions as conteimedi_atmo_medio } from './conteixement-medi-2t_atmosfera_medio';
-// import { questions as conteimedi_atmo_dificil } from './conteixement-medi-2t_atmosfera_dificil';
-// import { questions as conteimedi_atmo_evaluacion } from './conteixement-medi-2t_atmosfera_evaluacion';
+// import { questions as conteimedi_atmo_facil } from './coneixement-medi-2t_atmosfera_facil';
+// import { questions as conteimedi_atmo_medio } from './coneixement-medi-2t_atmosfera_medio';
+// import { questions as conteimedi_atmo_dificil } from './coneixement-medi-2t_atmosfera_dificil';
+// import { questions as conteimedi_atmo_evaluacion } from './coneixement-medi-2t_atmosfera_evaluacion';
 
-// import { questions as conteimedi_terra_facil } from './conteixement-medi-2t_terra_facil';
-// import { questions as conteimedi_terra_medio } from './conteixement-medi-2t_terra_medio';
-// import { questions as conteimedi_terra_dificil } from './conteixement-medi-2t_terra_dificil';
-// import { questions as conteimedi_terra_evaluacionfacil } from './conteixement-medi-2t_terra_evaluacion-facil';
-// import { questions as conteimedi_terra_evaluacionmedio } from './conteixement-medi-2t_terra_evaluacion-medio';
-// import { questions as conteimedi_terra_evaluaciondificil } from './conteixement-medi-2t_terra_evaluacion-dificil';
+// import { questions as conteimedi_terra_facil } from './coneixement-medi-2t_terra_facil';
+// import { questions as conteimedi_terra_medio } from './coneixement-medi-2t_terra_medio';
+// import { questions as conteimedi_terra_dificil } from './coneixement-medi-2t_terra_dificil';
+// import { questions as conteimedi_terra_evaluacionfacil } from './coneixement-medi-2t_terra_evaluacion-facil';
+// import { questions as conteimedi_terra_evaluacionmedio } from './coneixement-medi-2t_terra_evaluacion-medio';
+// import { questions as conteimedi_terra_evaluaciondificil } from './coneixement-medi-2t_terra_evaluacion-dificil';
 
 // // Type for our content dictionary
 // type ContentMap = {
@@ -57,12 +57,12 @@
 // // --- THE REGISTRY ---
 // // Register new files here using the format: "subject_topic_level"
 // const contentRegistry: ContentMap = {
-//   'conteixement-medi-2t_terra_facil': conteimedi_terra_facil,
-//   'conteixement-medi-2t_terra_medio': conteimedi_terra_medio,
-//   'conteixement-medi-2t_terra_dificil': conteimedi_terra_dificil,
-//   'conteixement-medi-2t_terra_evaluacion-facil': conteimedi_terra_evaluacionfacil,
-//   'conteixement-medi-2t_terra_evaluacion-medio': conteimedi_terra_evaluacionmedio,
-//   'conteixement-medi-2t_terra_evaluacion-dificil': conteimedi_terra_evaluaciondificil,
+//   'coneixement-medi-2t_terra_facil': conteimedi_terra_facil,
+//   'coneixement-medi-2t_terra_medio': conteimedi_terra_medio,
+//   'coneixement-medi-2t_terra_dificil': conteimedi_terra_dificil,
+//   'coneixement-medi-2t_terra_evaluacion-facil': conteimedi_terra_evaluacionfacil,
+//   'coneixement-medi-2t_terra_evaluacion-medio': conteimedi_terra_evaluacionmedio,
+//   'coneixement-medi-2t_terra_evaluacion-dificil': conteimedi_terra_evaluaciondificil,
 
 //   'matematicas1t_fracciones_facil': mat1t_frac_facil,
 
@@ -96,15 +96,15 @@
 //   'natural-science-1t_human-body_dificil': natsci_body_dificil,
 //   'natural-science-1t_human-body_evaluacion': natsci_body_evaluacion,
 
-//   'conteixement-medi-1t_civilitzaciones_facil': conteimedi_civi_facil,
-//   'conteixement-medi-1t_civilitzaciones_medio': conteimedi_civi_medio,
-//   'conteixement-medi-1t_civilitzaciones_dificil': conteimedi_civi_dificil,
-//   'conteixement-medi-1t_civilitzaciones_evaluacion': conteimedi_civi_evaluacion,
+//   'coneixement-medi-1t_civilitzaciones_facil': conteimedi_civi_facil,
+//   'coneixement-medi-1t_civilitzaciones_medio': conteimedi_civi_medio,
+//   'coneixement-medi-1t_civilitzaciones_dificil': conteimedi_civi_dificil,
+//   'coneixement-medi-1t_civilitzaciones_evaluacion': conteimedi_civi_evaluacion,
 
-//   'conteixement-medi-2t_atmosfera_facil': conteimedi_atmo_facil,
-//   'conteixement-medi-2t_atmosfera_medio': conteimedi_atmo_medio,
-//   'conteixement-medi-2t_atmosfera_dificil': conteimedi_atmo_dificil,
-//   'conteixement-medi-2t_atmosfera_evaluacion': conteimedi_atmo_evaluacion,
+//   'coneixement-medi-2t_atmosfera_facil': conteimedi_atmo_facil,
+//   'coneixement-medi-2t_atmosfera_medio': conteimedi_atmo_medio,
+//   'coneixement-medi-2t_atmosfera_dificil': conteimedi_atmo_dificil,
+//   'coneixement-medi-2t_atmosfera_evaluacion': conteimedi_atmo_evaluacion,
 // };
 
 // export const getContentForLevel = (
@@ -118,12 +118,12 @@
 
 // data\content\index.ts
 import { Question } from '../../types';
-import { questions as conteixement2t_terra_facil } from './conteixement-medi-2t_terra_facil';
-import { questions as conteixement2t_terra_medio } from './conteixement-medi-2t_terra_medio';
-import { questions as conteixement2t_terra_dificil } from './conteixement-medi-2t_terra_dificil';
-import { questions as conteixement2t_terra_evafacil } from './conteixement-medi-2t_terra_evaluacion-facil';
-import { questions as conteixement2t_terra_evamedio } from './conteixement-medi-2t_terra_evaluacion-medio';
-import { questions as conteixement2t_terra_evadificil } from './conteixement-medi-2t_terra_evaluacion-dificil';
+import { questions as coneixement2t_terra_facil } from './coneixement-medi-2t_terra_facil';
+import { questions as coneixement2t_terra_medio } from './coneixement-medi-2t_terra_medio';
+import { questions as coneixement2t_terra_dificil } from './coneixement-medi-2t_terra_dificil';
+import { questions as coneixement2t_terra_evafacil } from './coneixement-medi-2t_terra_evaluacion-facil';
+import { questions as coneixement2t_terra_evamedio } from './coneixement-medi-2t_terra_evaluacion-medio';
+import { questions as coneixement2t_terra_evadificil } from './coneixement-medi-2t_terra_evaluacion-dificil';
 
 // NOTE: Content files are currently missing in the local environment.
 // Commenting out imports to prevent build errors.
@@ -143,12 +143,12 @@ type ContentMap = {
 // Register new files here using the format: "subject_topic_level"
 const contentRegistry: ContentMap = {
   // Registered the placeholder for "La Terra" topic at "Fácil" level
-  'conteixement-medi-2t_terra_facil': conteixement2t_terra_facil,
-  'conteixement-medi-2t_terra_medio': conteixement2t_terra_medio,
-  'conteixement-medi-2t_terra_dificil': conteixement2t_terra_dificil,
-  'conteixement-medi-2t_terra_evaluacion-facil': conteixement2t_terra_evafacil,
-  'conteixement-medi-2t_terra_evaluacion-medio': conteixement2t_terra_evamedio,
-  'conteixement-medi-2t_terra_evaluacion-dificil': conteixement2t_terra_evadificil,
+  'coneixement-medi-2t_terra_facil': coneixement2t_terra_facil,
+  'coneixement-medi-2t_terra_medio': coneixement2t_terra_medio,
+  'coneixement-medi-2t_terra_dificil': coneixement2t_terra_dificil,
+  'coneixement-medi-2t_terra_evaluacion-facil': coneixement2t_terra_evafacil,
+  'coneixement-medi-2t_terra_evaluacion-medio': coneixement2t_terra_evamedio,
+  'coneixement-medi-2t_terra_evaluacion-dificil': coneixement2t_terra_evadificil,
   
 };
 

@@ -10,7 +10,7 @@ export interface InfographicItem {
 // Registry of infographic images mapping "subjectId_topicId" to a list of images.
 const INFOGRAPHICS_REGISTRY: Record<string, InfographicItem[]> = {
   // TOPIC: La Terra
-  'conteixement-medi-2t_terra': [
+  'coneixement-medi-2t_terra': [
     { 
       id: 'terra-1', 
       title: 'General', 
