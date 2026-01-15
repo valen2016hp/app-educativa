@@ -3,14 +3,26 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ChevronLeft, ChevronRight, Presentation as PresentationIcon } from 'lucide-react';
 import { getSlidesForTopic } from '../data/presentations';
 import { getTopicById } from '../data/courses';
+import { useUser } from '../context/UserContext';
 
 const PresentationView: React.FC = () => {
   const { asignatura, tema } = useParams<{ asignatura: string; tema: string }>();
+  const { addActivity } = useUser();
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const topicData = getTopicById(asignatura || '', tema || '');
   const slides = getSlidesForTopic(asignatura || '', tema || '');
   const totalSlides = slides.length;
+
+  // Log activity on mount
+  useEffect(() => {
+    addActivity({
+      action: 'VIEW_PRESENTATION',
+      subjectId: asignatura || 'unknown',
+      topicId: tema || 'unknown',
+      levelId: 'general',
+    });
+  }, [asignatura, tema]);
 
   // Keyboard navigation
   useEffect(() => {

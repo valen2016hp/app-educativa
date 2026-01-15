@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, X, Image as ImageIcon, Maximize2 } from 'lucide-react';
 import { getInfographicsForTopic, InfographicItem } from '../data/infographics';
 import { getTopicById } from '../data/courses';
+import { useUser } from '../context/UserContext';
 
 const InfographicView: React.FC = () => {
   const { asignatura, tema } = useParams<{ asignatura: string; tema: string }>();
   const [selectedImage, setSelectedImage] = useState<InfographicItem | null>(null);
+  const { addActivity } = useUser();
 
   const topicData = getTopicById(asignatura || '', tema || '');
   const items = getInfographicsForTopic(asignatura || '', tema || '');
+
+  // Log activity on mount
+  useEffect(() => {
+    addActivity({
+      action: 'VIEW_INFOGRAPHIC',
+      subjectId: asignatura || 'unknown',
+      topicId: tema || 'unknown',
+      levelId: 'general',
+      // No score or duration needed
+    });
+  }, [asignatura, tema]);
 
   // Ensure we always have a grid of 6 items (fill with nulls if needed)
   const gridItems = [...items];

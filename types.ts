@@ -1,12 +1,23 @@
+
+export type ActionType = 
+  | 'TEST_COMPLETED' 
+  | 'PRACTICE_COMPLETED' 
+  | 'VIEW_INFOGRAPHIC' 
+  | 'VIEW_PRESENTATION' 
+  | 'VIEW_VIDEO' 
+  | 'VIEW_MATERIAL';
+
 export interface ActivityLogEntry {
   id: string;
+  action: ActionType;
   subjectId: string;
   topicId: string;
-  levelId: string;
-  score: number;
-  maxScore: number;
-  duration: number;
+  levelId: string; // e.g., 'facil', 'evaluacion-medio', or 'general'
+  score?: number;     // Optional: Only for tests
+  maxScore?: number;  // Optional: Only for tests
+  duration?: number;  // Optional: Time spent in seconds
   timestamp: string;
+  details?: string;   // Extra info (e.g., "Viewed Slide 1")
 }
 
 export interface UserContextType {
@@ -15,6 +26,7 @@ export interface UserContextType {
   activityLog: ActivityLogEntry[];
   addActivity: (entry: Omit<ActivityLogEntry, 'id' | 'timestamp'>) => void;
   clearHistory: () => void;
+  downloadReport: () => void; // New function
 }
 
 export interface Subject {
@@ -25,7 +37,6 @@ export interface Subject {
   color: string;
 }
 
-// New Types for Phase 3
 export type QuestionType = 'multiple-choice' | 'comparator' | 'numeric';
 
 export interface Question {

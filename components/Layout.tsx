@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { User, Award, Home, X } from 'lucide-react';
+import { User, Award, Home, X, History } from 'lucide-react';
 import { useUser } from '../context/UserContext';
 import Breadcrumbs from './Breadcrumbs';
 
@@ -35,14 +35,25 @@ const Layout: React.FC = () => {
             </h1>
           </div>
 
-          <button 
-            onClick={toggleStats}
-            className="flex items-center gap-2 bg-dyslexia-blue text-white px-3 py-1.5 rounded-lg hover:bg-dyslexia-accent transition-all shadow-md focus:ring-4 focus:ring-blue-300 transform active:scale-95"
-            aria-label="Ver progreso del usuario"
-          >
-            <span className="hidden sm:inline font-bold text-base">{userName}</span>
-            <User size={20} />
-          </button>
+          <div className="flex items-center gap-2">
+            {/* History Button - Added here */}
+            <Link 
+              to="/history"
+              className="p-2 text-dyslexia-blue hover:bg-blue-50 rounded-lg transition-colors border-2 border-transparent hover:border-blue-100"
+              title="Ver Historial"
+            >
+              <History size={24} />
+            </Link>
+
+            <button 
+              onClick={toggleStats}
+              className="flex items-center gap-2 bg-dyslexia-blue text-white px-3 py-1.5 rounded-lg hover:bg-dyslexia-accent transition-all shadow-md focus:ring-4 focus:ring-blue-300 transform active:scale-95"
+              aria-label="Ver progreso del usuario"
+            >
+              <span className="hidden sm:inline font-bold text-base">{userName}</span>
+              <User size={20} />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -90,7 +101,7 @@ const Layout: React.FC = () => {
                 {activityLog.length === 0 ? (
                   <p className="text-gray-500 italic">¡Aún no has empezado! Vamos a jugar.</p>
                 ) : (
-                  <ul className="space-y-2 max-h-40 overflow-y-auto pr-2">
+                  <ul className="space-y-2 max-h-40 overflow-y-auto pr-2 mb-4">
                     {activityLog.slice(0, 5).map((log) => (
                       <li key={log.id} className="text-sm bg-gray-50 p-2 rounded border border-gray-200 flex justify-between">
                         <span className="capitalize">{log.subjectId} - {log.levelId}</span>
@@ -99,6 +110,14 @@ const Layout: React.FC = () => {
                     ))}
                   </ul>
                 )}
+                
+                <Link 
+                  to="/history" 
+                  onClick={() => setIsStatsOpen(false)}
+                  className="block w-full text-center bg-gray-100 hover:bg-gray-200 text-dyslexia-blue font-bold py-2 rounded-lg transition-colors"
+                >
+                  Ver Historial Completo
+                </Link>
               </div>
             </div>
           </div>

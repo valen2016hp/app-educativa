@@ -1,10 +1,10 @@
 import React from 'react';
 import { useUser } from '../context/UserContext';
-import { ArrowLeft, Clock, Calendar, Star, Trash2 } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, Star, Trash2, FileDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const History: React.FC = () => {
-  const { activityLog, clearHistory } = useUser();
+  const { activityLog, clearHistory, downloadReport } = useUser();
 
   const formatDate = (isoString: string) => {
     return new Date(isoString).toLocaleString('es-ES', {
@@ -16,16 +16,26 @@ const History: React.FC = () => {
     });
   };
 
-  const formatDuration = (seconds: number) => {
+  const formatDuration = (seconds?: number) => {
     if (!seconds) return '-';
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${mins}m ${secs}s`;
   };
 
+  const getActionLabel = (action: string) => {
+     switch(action) {
+       case 'TEST_COMPLETED': return 'Examen';
+       case 'PRACTICE_COMPLETED': return 'Práctica';
+       case 'VIEW_INFOGRAPHIC': return 'Infografía';
+       case 'VIEW_PRESENTATION': return 'Presentación';
+       default: return 'Actividad';
+     }
+  };
+
   return (
     <div className="space-y-6 animate-in fade-in duration-500">
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 gap-4">
         <div>
           <h2 className="text-3xl font-bold text-dyslexia-blue flex items-center gap-2">
             <Calendar size={32} />
@@ -34,15 +44,26 @@ const History: React.FC = () => {
           <p className="text-xl text-gray-600">Todo lo que has aprendido hasta ahora.</p>
         </div>
         
-        {activityLog.length > 0 && (
+        <div className="flex items-center gap-2 w-full md:w-auto">
+          {/* Always show Download button, it will alert if empty */}
           <button 
-            onClick={clearHistory}
-            className="flex items-center gap-2 text-red-600 hover:bg-red-100 px-4 py-2 rounded-xl transition-colors font-bold"
+            onClick={downloadReport}
+            className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-green-600 text-white hover:bg-green-700 px-4 py-2 rounded-xl transition-colors font-bold shadow-md"
           >
-            <Trash2 size={20} />
-            <span className="hidden sm:inline">Borrar Historial</span>
+            <FileDown size={20} />
+            <span className="inline">Descargar Excel</span>
           </button>
-        )}
+
+          {activityLog.length > 0 && (
+            <button 
+              onClick={clearHistory}
+              className="flex items-center justify-center gap-2 text-red-600 hover:bg-red-100 px-4 py-2 rounded-xl transition-colors font-bold"
+              title="Borrar historial"
+            >
+              <Trash2 size={20} />
+            </button>
+          )}
+        </div>
       </div>
 
       {activityLog.length === 0 ? (
@@ -71,15 +92,19 @@ const History: React.FC = () => {
                   <tr key={entry.id} className="hover:bg-yellow-50 transition-colors">
                     <td className="p-4 md:p-6">
                       <div className="flex flex-col">
+                        <span className="font-bold text-sm text-dyslexia-accent uppercase tracking-wider mb-1">
+                          {getActionLabel(entry.action)}
+                        </span>
                         <span className="font-bold text-xl capitalize text-dyslexia-blue">
                           {entry.subjectId}
                         </span>
                         <span className="text-gray-500 capitalize font-medium">
                           {entry.topicId} • <span className={`px-2 py-0.5 rounded text-sm ${
-                            entry.levelId === 'evaluacion' ? 'bg-violet-100 text-violet-700' :
+                            entry.levelId.includes('evaluacion') ? 'bg-violet-100 text-violet-700' :
                             entry.levelId === 'dificil' ? 'bg-red-100 text-red-700' :
                             entry.levelId === 'medio' ? 'bg-orange-100 text-orange-700' :
-                            'bg-green-100 text-green-700'
+                            entry.levelId === 'facil' ? 'bg-green-100 text-green-700' :
+                            'bg-gray-100 text-gray-700'
                           }`}>{entry.levelId}</span>
                         </span>
                         {/* Mobile only date */}
@@ -98,16 +123,20 @@ const History: React.FC = () => {
                       </div>
                     </td>
                     <td className="p-4 md:p-6 text-right">
-                      <div className="inline-block bg-white border-2 border-gray-200 rounded-xl px-4 py-2">
-                        <span className="block text-2xl font-extrabold text-dyslexia-accent">
-                          {entry.score} <span className="text-sm text-gray-400 font-normal">pts</span>
-                        </span>
-                        {entry.maxScore && (
-                          <span className="block text-xs text-gray-400 font-bold border-t border-gray-100 mt-1 pt-1">
-                            de {entry.maxScore}
+                      {entry.score !== undefined ? (
+                        <div className="inline-block bg-white border-2 border-gray-200 rounded-xl px-4 py-2">
+                          <span className="block text-2xl font-extrabold text-dyslexia-accent">
+                            {entry.score} <span className="text-sm text-gray-400 font-normal">pts</span>
                           </span>
-                        )}
-                      </div>
+                          {entry.maxScore && (
+                            <span className="block text-xs text-gray-400 font-bold border-t border-gray-100 mt-1 pt-1">
+                              de {entry.maxScore}
+                            </span>
+                          )}
+                        </div>
+                      ) : (
+                        <span className="text-gray-400 font-bold">-</span>
+                      )}
                     </td>
                   </tr>
                 ))}

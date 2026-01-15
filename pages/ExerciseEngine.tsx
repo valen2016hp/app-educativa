@@ -146,6 +146,7 @@ const ExerciseEngine: React.FC = () => {
     const timeSpent = INITIAL_TIME - timer;
     const maxPossibleScore = questions.length * 10;
     addActivity({
+      action: isEvaluation ? 'TEST_COMPLETED' : 'PRACTICE_COMPLETED',
       subjectId: asignatura || 'unknown',
       topicId: tema || 'unknown',
       levelId: nivel || 'unknown',
