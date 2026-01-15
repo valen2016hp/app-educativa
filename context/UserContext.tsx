@@ -99,6 +99,9 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       case 'PRACTICE_COMPLETED': return 'Práctica Completada';
       case 'VIEW_INFOGRAPHIC': return 'Visto Infografía';
       case 'VIEW_PRESENTATION': return 'Visto Presentación';
+      case 'VIEW_AUDIO': return 'Escuchado Audio';
+      case 'VIEW_VIDEO': return 'Visto Vídeo';
+      case 'VIEW_FLASHCARDS': return 'Visto Fichas';
       default: return action;
     }
   };
