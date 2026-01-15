@@ -102,6 +102,7 @@ export const UserProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       case 'VIEW_AUDIO': return 'Escuchado Audio';
       case 'VIEW_VIDEO': return 'Visto Vídeo';
       case 'VIEW_FLASHCARDS': return 'Visto Fichas';
+      case 'VIEW_GAME': return 'Juego Completado';
       default: return action;
     }
   };

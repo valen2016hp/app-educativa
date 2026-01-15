@@ -16,6 +16,7 @@ import EvaluationSelect from './pages/EvaluationSelect';
 import AudioView from './pages/AudioView';
 import VideoView from './pages/VideoView';
 import FlashcardsView from './pages/FlashcardsView';
+import GameView from './pages/GameView';
 
 const App: React.FC = () => {
   return (
@@ -40,6 +41,7 @@ const App: React.FC = () => {
             <Route path=":asignatura/:tema/audio" element={<AudioView />} />
             <Route path=":asignatura/:tema/video" element={<VideoView />} />
             <Route path=":asignatura/:tema/fichas" element={<FlashcardsView />} />
+            <Route path=":asignatura/:tema/juegos" element={<GameView />} />
             <Route path=":asignatura/:tema/practica" element={<PracticeSelect />} />
             <Route path=":asignatura/:tema/evaluacion" element={<EvaluationSelect />} />
 

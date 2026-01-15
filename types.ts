@@ -7,6 +7,7 @@ export type ActionType =
   | 'VIEW_VIDEO' 
   | 'VIEW_AUDIO'
   | 'VIEW_FLASHCARDS'
+  | 'VIEW_GAME'
   | 'VIEW_MATERIAL';
 
 export interface ActivityLogEntry {

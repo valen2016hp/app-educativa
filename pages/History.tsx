@@ -29,6 +29,10 @@ const History: React.FC = () => {
        case 'PRACTICE_COMPLETED': return 'Práctica';
        case 'VIEW_INFOGRAPHIC': return 'Infografía';
        case 'VIEW_PRESENTATION': return 'Presentación';
+       case 'VIEW_AUDIO': return 'Audio';
+      case 'VIEW_VIDEO': return 'Vídeo';
+      case 'VIEW_FLASHCARDS': return 'Fichas';
+      case 'VIEW_GAME': return 'Completado';
        default: return 'Actividad';
      }
   };
