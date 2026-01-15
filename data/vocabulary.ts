@@ -69,11 +69,6 @@ const VOCABULARY_REGISTRY: Record<string, VocabularyItem[]> = {
       word: 'Eix',
       definition: 'Una línia invisible que travessa la Terra de Pol Nord a Pol Sud.',
       example: 'La Terra està una mica inclinada sobre el seu eix.'
-    }, {
-      id: 'v11',
-      word: 'Eix',
-      definition: 'Una línia invisible que travessa la Terra de Pol Nord a Pol Sud.',
-      example: 'La Terra està una mica inclinada sobre el seu eix.'
     }
   ],
   
