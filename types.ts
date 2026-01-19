@@ -16,12 +16,12 @@ export interface ActivityLogEntry {
   action: ActionType;
   subjectId: string;
   topicId: string;
-  levelId: string; // e.g., 'facil', 'evaluacion-medio', or 'general'
-  score?: number;     // Optional: Only for tests
-  maxScore?: number;  // Optional: Only for tests
-  duration?: number;  // Optional: Time spent in seconds
+  levelId: string;
+  score?: number;
+  maxScore?: number;
+  duration?: number;
   timestamp: string;
-  details?: string;   // Extra info (e.g., "Viewed Slide 1")
+  details?: string;
 }
 
 export interface UserContextType {
@@ -30,7 +30,11 @@ export interface UserContextType {
   activityLog: ActivityLogEntry[];
   addActivity: (entry: Omit<ActivityLogEntry, 'id' | 'timestamp'>) => void;
   clearHistory: () => void;
-  downloadReport: () => void; // New function
+  downloadReport: () => void;
+  magicKey: string;
+  isSyncing: boolean;
+  setMagicKey: (key: string) => void;
+  pullHistoryFromCloud: (key: string) => Promise<void>;
 }
 
 export interface Subject {
@@ -48,6 +52,6 @@ export interface Question {
   type: QuestionType;
   prompt: string;
   correctAnswer: string | number;
-  options?: string[]; // Only for multiple-choice
-  feedback: string; // Helpful text if they get it wrong
+  options?: string[];
+  feedback: string;
 }
