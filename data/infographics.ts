@@ -10,6 +10,27 @@ export interface InfographicItem {
 // Registry of infographic images mapping "subjectId_topicId" to a list of images.
 const INFOGRAPHICS_REGISTRY: Record<string, InfographicItem[]> = {
   // TOPIC: La Terra
+'coneixement-medi-2t_hidrosfera': [
+    { 
+      id: 'hidrosfera-0', 
+      title: 'General', 
+      src: '/assets/infografias/sociales/2t/hidrosfera0.png' 
+    },
+  ],
+
+  'coneixement-medi-2t_atmosfera': [
+    { 
+      id: 'atmosfera-0', 
+      title: 'General', 
+      src: '/assets/infografias/sociales/2t/atmosfera0.png' 
+    },
+    { 
+      id: 'atmosfera-1', 
+      title: 'Atmosfera', 
+      src: '/assets/infografias/sociales/2t/atmosfera1.png' 
+    },
+  ],
+
   'coneixement-medi-2t_terra': [
     { 
       id: 'terra-1', 
@@ -32,35 +53,6 @@ const INFOGRAPHICS_REGISTRY: Record<string, InfographicItem[]> = {
       src: '/assets/infografias/sociales/2t/terra3.png' 
     },
   ],
-  
-  // TOPIC: Human Body
-  'natural-science-1t_human-body': [
-    { 
-      id: 'body-1', 
-      title: 'Sistema Digestivo', 
-      src: '/assets/infografias/human-body/digestivo.png' 
-    },
-    { 
-      id: 'body-2', 
-      title: 'Sistema Respiratorio', 
-      src: '/assets/infografias/human-body/respiratorio.png' 
-    },
-    { 
-      id: 'body-3', 
-      title: 'Esqueleto', 
-      src: '/assets/infografias/human-body/esqueleto.png' 
-    },
-    { 
-      id: 'body-4', 
-      title: 'Músculos', 
-      src: '/assets/infografias/human-body/musculos.png' 
-    },
-    { 
-      id: 'body-5', 
-      title: 'Cerebro', 
-      src: '/assets/infografias/human-body/cerebro.png' 
-    },
-  ]
 };
 
 export const getInfographicsForTopic = (subjectId: string, topicId: string): InfographicItem[] => {
