@@ -20,6 +20,7 @@ import {
   CloudSun,
   Earth,
   EarthIcon,
+  CloudRain,
 } from 'lucide-react';
 
 export const COURSES_DATA = [
@@ -65,6 +66,7 @@ export const COURSES_DATA = [
     topics: [
       { id: 'terra', name: "El nostre planeta: La Terra", icon: EarthIcon  , description: 'La Terra' },
       { id: 'atmosfera', name: "L'atmosfera", icon: CloudSun  , description: 'Atmosfera i clima terrestre' },
+      { id: 'hidrosfera', name: "La hidrosfera", icon: CloudRain  , description: 'Hidrosfera' },
     ]
   },
   {

@@ -1,0 +1,24 @@
+import { Question } from '../../types';
+
+export const questions: Question[] = [
+  { id: 'h-m-1', type: 'multiple-choice', prompt: "Què passa durant la condensació?", options: ["Es formen els núvols", "L'aigua desapareix", "L'aigua es torna salada"], correctAnswer: "Es formen els núvols", feedback: "Així és, el vapor es refreda i forma gotetes[cite: 410]." },
+  { id: 'h-m-2', type: 'comparator', prompt: "L'aigua de les glaceres és dolça o salada?", options: ["Dolça", "Salada"], correctAnswer: "Dolça", feedback: "Molt bé, les glaceres són aigües continentals (dolces)[cite: 428, 437]." },
+  { id: 'h-m-3', type: 'multiple-choice', prompt: "Com s'anomenen les acumulacions d'aigua subterrània?", options: ["Aqüífers", "Afluents", "Aiguamolls"], correctAnswer: "Aqüífers", feedback: "Correcte! Són reserves sota terra[cite: 439]." },
+  { id: 'h-m-4', type: 'numeric', prompt: "En quin curs el pendent és 'moderat'?", options: [], correctAnswer: "2", feedback: "Molt bé, el curs mitjà correspon a la plana[cite: 395]." },
+  { id: 'h-m-5', type: 'multiple-choice', prompt: "Què és el cabal d'un riu?", options: ["La quantitat d'aigua que transporta", "La llargada del riu", "On neix el riu"], correctAnswer: "La quantitat d'aigua que transporta", feedback: "Perfecte! És tota l'aigua que porta[cite: 393]." },
+  { id: 'h-m-6', type: 'comparator', prompt: "On trobem més cabal, al curs alt o al curs baix?", options: ["Al curs baix", "Al curs alt"], correctAnswer: "Al curs baix", feedback: "Exacte, al final el riu porta més aigua[cite: 397]." },
+  { id: 'h-m-7', type: 'multiple-choice', prompt: "Com es diu el riu que desemboca en un altre riu?", options: ["Afluent", "Llera", "Cabal"], correctAnswer: "Afluent", feedback: "Molt bé! No va directe al mar[cite: 394]." },
+  { id: 'h-m-8', type: 'numeric', prompt: "Quants tipus d'aigües es distingeixen a la Terra?", options: [], correctAnswer: "2", feedback: "Sí: marines i continentals[cite: 416]." },
+  { id: 'h-m-9', type: 'multiple-choice', prompt: "Què són els llacs i llacunes?", options: ["Acumulacions d'aigua en depressions", "Rius subterranis", "Muntanyes de gel"], correctAnswer: "Acumulacions d'aigua en depressions", feedback: "Correcte, ocupen forats al relleu[cite: 434]." },
+  { id: 'h-m-10', type: 'comparator', prompt: "Com es pot treure l'aigua subterrània artificialment?", options: ["Amb pous", "A través de fonts"], correctAnswer: "Amb pous", feedback: "Exacte, els pous els fem les persones[cite: 442]." },
+  { id: 'h-m-11', type: 'multiple-choice', prompt: "On se situen les glaceres?", options: ["Alta muntanya i pols", "A la platja", "Dins dels aqüífers"], correctAnswer: "Alta muntanya i pols", feedback: "Molt bé, on fa molt de fred[cite: 438]." },
+  { id: 'h-m-12', type: 'numeric', prompt: "Al curs alt, com és el cabal segons el text?", options: ["Escàs", "Abundant"], correctAnswer: "Escàs", feedback: "Així és, porta poca aigua perquè acaba de néixer[cite: 392]." },
+  { id: 'h-m-13', type: 'multiple-choice', prompt: "Què passa amb l'aigua de la pluja i neu quan arriba a terra?", options: ["Llisca fins als rius i mars", "Es converteix en sal", "S'atura per sempre"], correctAnswer: "Llisca fins als rius i mars", feedback: "Molt bé, per tornar a començar el cicle[cite: 411]." },
+  { id: 'h-m-14', type: 'comparator', prompt: "On neix un riu?", options: ["Curs alt", "Curs baix"], correctAnswer: "Curs alt", feedback: "Exacte, el naixement és al principi[cite: 391]." },
+  { id: 'h-m-15', type: 'multiple-choice', prompt: "Quin oceà separa els continents però no és l'Atlàntic ni el Pacífic?", options: ["Índic", "Mare Nostrum", "Riu de la Plata"], correctAnswer: "Índic", feedback: "Molt bé! L'Índic és un dels 5 oceans[cite: 420]." },
+  { id: 'h-m-16', type: 'numeric', prompt: "Quantes parts té el recorregut d'un riu?", options: [], correctAnswer: "3", feedback: "Perfecte! Curs alt, mitjà i baix[cite: 391]." },
+  { id: 'h-m-17', type: 'multiple-choice', prompt: "Què vol dir que l'aigua és 'subterrània'?", options: ["Que està sota terra", "Que està al cim", "Que està al mar"], correctAnswer: "Que està sota terra", feedback: "Així és, es filtra pel sòl[cite: 441]." },
+  { id: 'h-m-18', type: 'comparator', prompt: "Què és més gran, l'oceà Àrtic o l'oceà Pacífic (en el mapa)?", options: ["Oceà Pacífic", "Oceà Àrtic"], correctAnswer: "Oceà Pacífic", feedback: "Molt bé! El Pacífic és immens[cite: 421]." },
+  { id: 'h-m-19', type: 'multiple-choice', prompt: "Com s'anomena l'aigua que surt de manera natural de terra?", options: ["Fonts o deus", "Pous", "Afluents"], correctAnswer: "Fonts o deus", feedback: "Correcte, brolla sola de la terra[cite: 442]." },
+  { id: 'h-m-20', type: 'numeric', prompt: "En quin curs la llera té la 'màxima amplada'?", options: [], correctAnswer: "3", feedback: "Exacte, al curs baix és on és més ample[cite: 397]." }
+];

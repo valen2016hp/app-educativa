@@ -1,0 +1,24 @@
+import { Question } from '../../types';
+
+export const questions: Question[] = [
+  { id: 'h-e-1', type: 'multiple-choice', prompt: "Què és la hidrosfera?", options: ["La capa d'aigua de la Terra", "La capa d'aire", "Les roques de la Terra"], correctAnswer: "La capa d'aigua de la Terra", feedback: "Molt bé! És tota l'aigua del nostre planeta[cite: 400]." },
+  { id: 'h-e-2', type: 'comparator', prompt: "La quantitat d'aigua a la Terra canvia sempre o és la mateixa?", options: ["Sempre és la mateixa", "Canvia cada dia"], correctAnswer: "Sempre és la mateixa", feedback: "Exacte! L'aigua es conserva gràcies al seu cicle[cite: 402]." },
+  { id: 'h-e-3', type: 'multiple-choice', prompt: "Com s'anomena el moviment constant de l'aigua?", options: ["Cicle de l'aigua", "Cicle de l'aire", "Cicle de la roca"], correctAnswer: "Cicle de l'aigua", feedback: "Correcte! És el viatge que fa l'aigua per la Terra[cite: 404]." },
+  { id: 'h-e-4', type: 'numeric', prompt: "En quants estats podem trobar l'aigua (sòlid, líquid...)?", options: [], correctAnswer: "3", feedback: "Molt bé: sòlid, líquid i gasós[cite: 403]." },
+  { id: 'h-e-5', type: 'multiple-choice', prompt: "Què fa l'escalfor del Sol amb l'aigua?", options: ["L'evapora", "La congela", "La torna blava"], correctAnswer: "L'evapora", feedback: "Així es fa, el Sol escalfa l'aigua i puja com a vapor[cite: 413]." },
+  { id: 'h-e-6', type: 'comparator', prompt: "L'aigua dels oceans i mars és...", options: ["Salada", "Dolça"], correctAnswer: "Salada", feedback: "Molt bé! Les aigües marines són salades[cite: 419]." },
+  { id: 'h-e-7', type: 'multiple-choice', prompt: "On neixen els rius?", options: ["A la muntanya", "Al mig del mar", "A la platja"], correctAnswer: "A la muntanya", feedback: "Correcte, neixen a dalt i baixen cap avall[cite: 432]." },
+  { id: 'h-e-8', type: 'numeric', prompt: "Quants oceans hi ha a la Terra segons el text?", options: [], correctAnswer: "5", feedback: "Perfecte! Atlàntic, Àrtic, Antàrtic, Pacífic i Índic[cite: 420]." },
+  { id: 'h-e-9', type: 'multiple-choice', prompt: "Com es diuen les zones de terra baixa que s'inunden?", options: ["Aiguamolls", "Glaceres", "Llacs"], correctAnswer: "Aiguamolls", feedback: "Molt bé! Són terres inundades[cite: 436]." },
+  { id: 'h-e-10', type: 'comparator', prompt: "L'aigua dels rius és dolça o salada?", options: ["Dolça", "Salada"], correctAnswer: "Dolça", feedback: "Així és, els rius són aigües continentals dolces[cite: 431, 429]." },
+  { id: 'h-e-11', type: 'multiple-choice', prompt: "Quan l'aigua cau dels núvols en forma de pluja, és...", options: ["Precipitació", "Evaporació", "Condensació"], correctAnswer: "Precipitació", feedback: "Correcte! La pluja i la neu són precipitacions[cite: 407]." },
+  { id: 'h-e-12', type: 'numeric', prompt: "En quantes parts es divideix el curs d'un riu?", options: [], correctAnswer: "3", feedback: "Molt bé: curs alt, mitjà i baix[cite: 391]." },
+  { id: 'h-e-13', type: 'multiple-choice', prompt: "On desemboquen normalment els rius?", options: ["Al mar o un llac", "A un volcà", "A un bosc"], correctAnswer: "Al mar o un llac", feedback: "Exacte, acaben el seu camí allà[cite: 432]." },
+  { id: 'h-e-14', type: 'comparator', prompt: "Què pesa més als núvols per acabar caient com a pluja?", options: ["Les gotetes d'aigua", "El vapor d'aire"], correctAnswer: "Les gotetes d'aigua", feedback: "Molt bé, quan es fan grosses i pesants, cauen[cite: 405]." },
+  { id: 'h-e-15', type: 'multiple-choice', prompt: "Com s'anomenen les masses de glaç dels pols?", options: ["Glaceres", "Rius", "Fonts"], correctAnswer: "Glaceres", feedback: "Així es fa! Es troben en llocs freds[cite: 438]." },
+  { id: 'h-e-16', type: 'numeric', prompt: "Quin número de curs és el Curs Baix d'un riu?", options: [], correctAnswer: "3", feedback: "Sí, és la part final del riu[cite: 396]." },
+  { id: 'h-e-17', type: 'multiple-choice', prompt: "Com s'anomena el terreny per on passa el riu?", options: ["Llera", "Cabal", "Afluent"], correctAnswer: "Llera", feedback: "Correcte, és com el camí del riu[cite: 393]." },
+  { id: 'h-e-18', type: 'comparator', prompt: "On trobem més aigua a la Terra?", options: ["Als oceans i mars", "Als llacs"], correctAnswer: "Als oceans i mars", feedback: "Molt bé, les aigües marines són la major part[cite: 419]." },
+  { id: 'h-e-19', type: 'multiple-choice', prompt: "Què es forma quan l'aigua de pluja es filtra sota terra?", options: ["Aigües subterrànies", "Mars", "Núvols"], correctAnswer: "Aigües subterrànies", feedback: "Exacte! Van a parar sota terra[cite: 441]." },
+  { id: 'h-e-20', type: 'numeric', prompt: "En quin curs la llera és més estreta?", options: [], correctAnswer: "1", feedback: "Molt bé, al curs alt la llera és estreta[cite: 392]." }
+];

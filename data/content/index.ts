@@ -37,11 +37,6 @@
 // import { questions as conteimedi_civi_dificil } from './coneixement-medi-1t_civilitzaciones_dificil';
 // import { questions as conteimedi_civi_evaluacion } from './coneixement-medi-1t_civilitzaciones_evaluacion';
 
-// import { questions as conteimedi_atmo_facil } from './coneixement-medi-2t_atmosfera_facil';
-// import { questions as conteimedi_atmo_medio } from './coneixement-medi-2t_atmosfera_medio';
-// import { questions as conteimedi_atmo_dificil } from './coneixement-medi-2t_atmosfera_dificil';
-// import { questions as conteimedi_atmo_evaluacion } from './coneixement-medi-2t_atmosfera_evaluacion';
-
 // import { questions as conteimedi_terra_facil } from './coneixement-medi-2t_terra_facil';
 // import { questions as conteimedi_terra_medio } from './coneixement-medi-2t_terra_medio';
 // import { questions as conteimedi_terra_dificil } from './coneixement-medi-2t_terra_dificil';
@@ -118,6 +113,21 @@
 
 // data\content\index.ts
 import { Question } from '../../types';
+
+import { questions as coneixement2t_hidrosfera_facil } from './coneixement-medi-2t_hidrosfera_facil';
+import { questions as coneixement2t_hidrosfera_medio } from './coneixement-medi-2t_hidrosfera_medio';
+import { questions as coneixement2t_hidrosfera_dificil } from './coneixement-medi-2t_hidrosfera_dificil';
+import { questions as coneixement2t_hidrosfera_evafacil } from './coneixement-medi-2t_hidrosfera_evaluacion-facil';
+import { questions as coneixement2t_hidrosfera_evamedio } from './coneixement-medi-2t_hidrosfera_evaluacion-medio';
+import { questions as coneixement2t_hidrosfera_evadificil } from './coneixement-medi-2t_atmosfera_evaluacion-dificil';
+
+import { questions as coneixement2t_atmosfera_facil } from './coneixement-medi-2t_atmosfera_facil';
+import { questions as coneixement2t_atmosfera_medio } from './coneixement-medi-2t_atmosfera_medio';
+import { questions as coneixement2t_atmosfera_dificil } from './coneixement-medi-2t_atmosfera_dificil';
+import { questions as coneixement2t_atmosfera_evafacil } from './coneixement-medi-2t_atmosfera_evaluacion-facil';
+import { questions as coneixement2t_atmosfera_evamedio } from './coneixement-medi-2t_atmosfera_evaluacion-medio';
+import { questions as coneixement2t_atmosfera_evadificil } from './coneixement-medi-2t_atmosfera_evaluacion-dificil';
+
 import { questions as coneixement2t_terra_facil } from './coneixement-medi-2t_terra_facil';
 import { questions as coneixement2t_terra_medio } from './coneixement-medi-2t_terra_medio';
 import { questions as coneixement2t_terra_dificil } from './coneixement-medi-2t_terra_dificil';
@@ -143,6 +153,20 @@ type ContentMap = {
 // Register new files here using the format: "subject_topic_level"
 const contentRegistry: ContentMap = {
   // Registered the placeholder for "La Terra" topic at "Fácil" level
+  'coneixement-medi-2t_hidrosfera_facil': coneixement2t_hidrosfera_facil,
+  'coneixement-medi-2t_hidrosfera_medio': coneixement2t_hidrosfera_medio,
+  'coneixement-medi-2t_hidrosfera_dificil': coneixement2t_hidrosfera_dificil,
+  'coneixement-medi-2t_hidrosfera_evaluacion-facil': coneixement2t_hidrosfera_evafacil,
+  'coneixement-medi-2t_hidrosfera_evaluacion-medio': coneixement2t_hidrosfera_evamedio,
+  'coneixement-medi-2t_hidrosfera_evaluacion-dificil': coneixement2t_hidrosfera_evadificil,
+  
+  'coneixement-medi-2t_atmosfera_facil': coneixement2t_atmosfera_facil,
+  'coneixement-medi-2t_atmosfera_medio': coneixement2t_atmosfera_medio,
+  'coneixement-medi-2t_atmosfera_dificil': coneixement2t_atmosfera_dificil,
+  'coneixement-medi-2t_atmosfera_evaluacion-facil': coneixement2t_atmosfera_evafacil,
+  'coneixement-medi-2t_atmosfera_evaluacion-medio': coneixement2t_atmosfera_evamedio,
+  'coneixement-medi-2t_atmosfera_evaluacion-dificil': coneixement2t_atmosfera_evadificil,
+
   'coneixement-medi-2t_terra_facil': coneixement2t_terra_facil,
   'coneixement-medi-2t_terra_medio': coneixement2t_terra_medio,
   'coneixement-medi-2t_terra_dificil': coneixement2t_terra_dificil,

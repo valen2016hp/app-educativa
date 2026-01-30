@@ -1,0 +1,24 @@
+import { Question } from '../../types';
+
+export const questions: Question[] = [
+  { id: 'atm-e-1', type: 'multiple-choice', prompt: "Què és l'atmosfera segons el text?", options: ["Una capa d'aire", "Una capa de roques", "Una capa d'aigua"], correctAnswer: "Una capa d'aire", feedback: "Molt bé! La Terra està envoltada per aquesta capa d'aire." },
+  { id: 'atm-e-2', type: 'comparator', prompt: "L'atmosfera és visible o invisible?", options: ["Invisible", "Visible"], correctAnswer: "Invisible", feedback: "Correcte, és invisible però imprescindible per a la vida." },
+  { id: 'atm-e-3', type: 'multiple-choice', prompt: "Quin d'aquests fenòmens meteorològics es produeix a la troposfera?", options: ["El vent", "Els terratrèmols", "Les marees"], correctAnswer: "El vent", feedback: "Així es fa! A la troposfera hi ha núvols, precipitacions i vent." },
+  { id: 'atm-e-4', type: 'numeric', prompt: "Quantes grans zones climàtiques es distingeixen a la Terra?", options: [], correctAnswer: "3", feedback: "Exacte: la zona càlida, la temperada i la freda." },
+  { id: 'atm-e-5', type: 'multiple-choice', prompt: "Com s'anomena l'aigua procedent dels núvols que cau en forma de pluja o neu?", options: ["Precipitacions", "Humitat", "Pressió"], correctAnswer: "Precipitacions", feedback: "Molt bé! Poden ser pluja, calamarsa o neu." },
+  { id: 'atm-e-6', type: 'comparator', prompt: "On arriben els raigs del Sol de manera més directa?", options: ["A l'equador", "Als pols"], correctAnswer: "A l'equador", feedback: "Correcte, per això les temperatures hi són més altes." },
+  { id: 'atm-e-7', type: 'multiple-choice', prompt: "Quin d'aquests gasos és necessari per a la fotosíntesi?", options: ["Diòxid de carboni", "Oxigen", "Ozó"], correctAnswer: "Diòxid de carboni", feedback: "Molt bé! Les plantes el necessiten juntament amb llum i aigua." },
+  { id: 'atm-e-8', type: 'numeric', prompt: "Fins a quants quilòmetres d'altitud arriba la troposfera?", options: [], correctAnswer: "12", feedback: "Correcte, es localitza a uns 12 km de distància." },
+  { id: 'atm-e-9', type: 'multiple-choice', prompt: "Què s'hi troba a l'exosfera?", options: ["Els satèl·lits artificials", "Els núvols de pluja", "La capa d'ozó"], correctAnswer: "Els satèl·lits artificials", feedback: "Exacte, es troben en la capa més externa." },
+  { id: 'atm-e-10', type: 'comparator', prompt: "El mar triga més o menys a refredar-se que la terra?", options: ["Triga més", "Triga menys"], correctAnswer: "Triga més", feedback: "Això fa que la temperatura de la costa sigui més suau." },
+  { id: 'atm-e-11', type: 'multiple-choice', prompt: "Com és l'aire quan s'anomena 'vent'?", options: ["Aire en moviment", "Aire que no es mou", "Aire amb pols"], correctAnswer: "Aire en moviment", feedback: "Molt bé, i pot ser fred o calent." },
+  { id: 'atm-e-12', type: 'numeric', prompt: "A quina altitud arriba la mesosfera?", options: [], correctAnswer: "80", feedback: "Correcte, arriba als 80 km d'altitud." },
+  { id: 'atm-e-13', type: 'multiple-choice', prompt: "A quina zona climàtica vivim nosaltres?", options: ["Zona temperada", "Zona freda", "Zona càlida"], correctAnswer: "Zona temperada", feedback: "Exacte! Aquí tenim 4 estacions." },
+  { id: 'atm-e-14', type: 'comparator', prompt: "A la zona freda hi ha gel i neu tot l'any?", options: ["Sí", "No"], correctAnswer: "Sí", feedback: "Sí, perquè els raigs del Sol hi arriben molt inclinats." },
+  { id: 'atm-e-15', type: 'multiple-choice', prompt: "Com s'anomena la quantitat de vapor d'aigua que hi ha a l'aire?", options: ["Humitat", "Temperatura", "Pressió"], correctAnswer: "Humitat", feedback: "Correcte! Si n'hi ha molta, es formen núvols i boira." },
+  { id: 'atm-e-16', type: 'numeric', prompt: "A quina distància es localitza l'estratosfera?", options: [], correctAnswer: "50", feedback: "Així es fa, es troba a uns 50 km." },
+  { id: 'atm-e-17', type: 'multiple-choice', prompt: "Què és la temperatura?", options: ["La quantitat de calor a l'aire", "El pes de l'aire", "La velocitat de l'aire"], correctAnswer: "La quantitat de calor a l'aire", feedback: "Molt bé!" },
+  { id: 'atm-e-18', type: 'comparator', prompt: "On es destrueixen els meteorits?", options: ["A la mesosfera", "A la troposfera"], correctAnswer: "A la mesosfera", feedback: "Correcte, ens protegeix del seu impacte." },
+  { id: 'atm-e-19', type: 'multiple-choice', prompt: "L'atmosfera distribueix l'energia de...", options: ["El Sol", "Les marees", "Els volcans"], correctAnswer: "El Sol", feedback: "Correcte, distribueix l'energia solar per tota la Terra." },
+  { id: 'atm-e-20', type: 'numeric', prompt: "Segons el mapa de la pàgina 3, quants quilòmetres pot arribar a tenir l'exosfera de màxim?", options: [], correctAnswer: "190000", feedback: "Molt bé! El rang és de 700 a 190.000 km." }
+];
