@@ -5,7 +5,7 @@
 export const PRESENTATIONS_REGISTRY: Record<string, string[]> = {
   // EXAMPLE:
   // 'subjectId_topicId': [
-  //   '/assets/presentaciones/topic/Diapositiva1.JPG',
+  //   '/assets/presentaciones/topic/Diapositiva1.º',
   //   '/assets/presentaciones/topic/Diapositiva2.JPG',
   // ]
 
@@ -28,10 +28,22 @@ export const PRESENTATIONS_REGISTRY: Record<string, string[]> = {
   ],
 
   // TOPIC: Human Body
-  'natural-science-1t_human-body': [
-    '/assets/presentaciones/human-body/Diapositiva1.JPG',
-    '/assets/presentaciones/human-body/Diapositiva2.JPG',
-    '/assets/presentaciones/human-body/Diapositiva3.JPG',
+  'coneixement-medi-2t_atmosfera': [
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva1.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva2.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva3.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva4.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva5.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva6.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva7.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva8.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva9.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva10.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva11.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva12.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva13.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva14.jpg',
+    '/assets/presentaciones/sociales/2t/atmosfera/Diapositiva15.jpg',
   ]
 };
 
